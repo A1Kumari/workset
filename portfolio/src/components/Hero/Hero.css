@@ -1,0 +1,135 @@
+/* Hero.css */
+
+/* Base styles */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 1;
+  color: #271f30;
+  max-width: 40%;
+  padding: 1rem;
+  margin: 50px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  color: #ca3cff;
+  font-size: 2.9rem;
+  font-weight: 500;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ca3cff;
+  color: #f6e8ea;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #258ea6;
+}
+
+/* Portrait box */
+.portrait-box {
+  flex: 1;
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  justify-content: flex-end; /* Align items to the right */
+  overflow: hidden;
+  height: 100%;
+}
+
+.portrait-img {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Social links */
+.social-links {
+  position: relative;
+  top: 80%;
+  left: 2rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-link:last-child {
+  margin-bottom: 0;
+}
+
+/* White line */
+.white-line {
+  top: 10%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 500px;
+  width: 2px;
+  background-color: #fff;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 80%;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-top: 2rem;
+  }
+
+  .portrait-box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portrait-img {
+    width: 100%;
+  }
+
+  .social-links {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+}

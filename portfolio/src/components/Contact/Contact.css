@@ -1,0 +1,95 @@
+/* Contact.css */
+.contact-section {
+  background-color: red;
+  padding: 2rem 0;
+}
+
+.contact-section h2 {
+  color: #ca3cff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+.contact-section .glass-morphism-card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  flex: 0 0 48%; /* This will make the card take up 48% of the container width */
+  background-color: yellow;
+  width: 50%;
+}
+
+.contact-section .glass-morphism-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section .glass-morphism-card p {
+  font-size: 1.2rem;
+  color: #271f30;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.contact-section .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-section label {
+  font-size: 1.2rem;
+  color: #271f30;
+}
+
+.contact-section .input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-section .btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #ca3cff;
+  color: #f6e8ea;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.contact-section .btn:hover {
+  background-color: #258ea6;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .contact-section .flex-container {
+    flex-direction: column;
+  }
+
+  .contact-section .glass-morphism-card {
+    flex: 1 0 100%;
+  }
+}

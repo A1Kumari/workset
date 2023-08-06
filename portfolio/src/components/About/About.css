@@ -1,0 +1,170 @@
+:root {
+    --aqua: #80ffe8;
+    --blush: #f6e8ea;
+    --purple: #ca3cff;
+    --navyBlue: #271f30;
+    --teal: #258ea6
+}
+ h1, h2, h3, h4, h5, h6{
+    color:var(--purple);
+ }
+ body{
+    background-color: var(--blush);
+ }
+ p{
+    color: var(--navyBlue);
+ }
+ .box{
+    height:200px;
+    width: 200px;
+    background-color: var(--teal);
+ }
+
+
+ /* About.css */
+.bg-pink-100 {
+    background-color: #f6e8ea;
+  }
+  
+  .py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-purple-600 {
+    color: #ca3cff;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .text-gray-700 {
+    color: #271f30;
+  }
+  
+  .leading-relaxed {
+    line-height: 1.625;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+/* About.css */
+/* About.css */
+.about-para{
+  font-size: 1.9rem;
+}
+.glass-morphism-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem; /* Adjust the gap between boxes as needed */
+}
+
+.glass-morphism-box {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Adjust font size to fit the content inside the boxes */
+.glass-morphism-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.glass-morphism-box p {
+  font-size: 1rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .glass-morphism-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .glass-morphism-box h2 {
+    font-size: 1rem;
+  }
+
+  .glass-morphism-box p {
+    font-size: 0.9rem;
+  }
+}
+
+.glass-morphism-box:hover {
+  transform: scale(1.05);
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+/* About.css */
+/* About.css */
+.about-container {
+ 
+  width: 80%;
+  margin: 0 auto; /* This will center the container horizontally */
+  justify-content: center; /* This will center the content horizontally */
+  align-items: center; /* This will center the content vertically */
+  text-align: center;
+}
+
