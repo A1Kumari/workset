@@ -1,62 +1,119 @@
+/* Contact.css */
+.contact-section {
+  padding: 2rem 0;
+  background-color: var(#0056b3);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #CA3CFF;
+  margin-bottom: 2rem;
+}
+
 .contact-section-container {
-  width: 80%;
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding for spacing */
-}
-
-
-
-.contact-section-container form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+.Contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-con {
+  flex-basis: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.glass-morphism-card {
+  flex-basis: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-part {
+  flex-basis: calc(60% - 30px);
+  padding: 20px;
+  color: #000;
+}
+
+.Aboutheading {
+  font-size: 2.1rem;
+}
+
+/* Form input styles */
 .form-group {
-  margin-bottom: 20px; /* Add some vertical spacing between form groups */
+  margin-bottom: 20px;
 }
 
-.form-group label {
-  color: #fff; /* Set the color of the label text */
+label {
+  display: block;
+  font-weight: bold;
+  color: #000;
 }
 
-.form-group input,
-.form-group textarea {
+.input {
   width: 100%;
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  color: #271f30;
 }
 
-.form-group textarea {
-  resize: vertical; /* Allow vertical resizing for the textarea */
+textarea {
+  resize: vertical;
 }
 
+/* Button styles */
 .btn {
-  background-color: #fff;
-  color: #258ea6;
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s;
 }
 
 .btn:hover {
-  background-color: #eee; /* Change the background color on hover */
+  background-color: #0056b3;
 }
 
-.glass-morphism-card {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-top: 20px; /* Add some spacing between the form and the card */
+/* Social links */
+.social-links-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.glass-morphism-card h3 {
-  color: #fff; /* Set the color of the card heading text */
+.social-link {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
-.glass-morphism-card p {
-  color: #fff; /* Set the color of the card text */
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .Contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-con,
+  .glass-morphism-card {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
 }
