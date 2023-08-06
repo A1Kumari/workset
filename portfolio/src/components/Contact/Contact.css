@@ -1,95 +1,62 @@
-/* Contact.css */
-.contact-section {
-  background-color: red;
-  padding: 2rem 0;
+.contact-section-container {
+  width: 80%;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for spacing */
 }
 
-.contact-section h2 {
-  color: #ca3cff;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
 
-.contact-section .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: blue;
-}
 
-.contact-section .glass-morphism-card {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-top: 1rem;
-  flex: 0 0 48%; /* This will make the card take up 48% of the container width */
-  background-color: yellow;
-  width: 50%;
-}
-
-.contact-section .glass-morphism-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.contact-section .glass-morphism-card p {
-  font-size: 1.2rem;
-  color: #271f30;
-}
-
-.contact-section form {
+.contact-section-container form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
 }
 
-.contact-section .form-group {
-  margin-bottom: 1rem;
+.form-group {
+  margin-bottom: 20px; /* Add some vertical spacing between form groups */
 }
 
-.contact-section label {
-  font-size: 1.2rem;
-  color: #271f30;
+.form-group label {
+  color: #fff; /* Set the color of the label text */
 }
 
-.contact-section .input {
+.form-group input,
+.form-group textarea {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-section textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-section .btn {
-  padding: 0.8rem 1.5rem;
-  background-color: #ca3cff;
-  color: #f6e8ea;
+  padding: 10px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-  font-size: 1.2rem;
 }
 
-.contact-section .btn:hover {
-  background-color: #258ea6;
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing for the textarea */
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .contact-section .flex-container {
-    flex-direction: column;
-  }
+.btn {
+  background-color: #fff;
+  color: #258ea6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
 
-  .contact-section .glass-morphism-card {
-    flex: 1 0 100%;
-  }
+.btn:hover {
+  background-color: #eee; /* Change the background color on hover */
+}
+
+.glass-morphism-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; /* Add some spacing between the form and the card */
+}
+
+.glass-morphism-card h3 {
+  color: #fff; /* Set the color of the card heading text */
+}
+
+.glass-morphism-card p {
+  color: #fff; /* Set the color of the card text */
 }
