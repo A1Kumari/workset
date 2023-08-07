@@ -18,7 +18,7 @@ function App() {
       <Hero/>
       <About/>
       <Project/>
-      <Form/>
+    
       <Contact/>
     </>
   )
